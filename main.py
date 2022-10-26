@@ -1,7 +1,7 @@
 from flask import Flask, jsonify
 
-app = Flask(__name__)
+main = Flask(__name__)
 
-@app.route('/')
+@main.route('/')
 def index():
     return jsonify({"Status": "Online"})
